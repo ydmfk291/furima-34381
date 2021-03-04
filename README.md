@@ -1,5 +1,6 @@
-# usersテーブル
+# README
 
+# usersテーブル
 | culumn  | type   | options       |
 | ------  | ----   | ------------- |
 | name    | string | null: false, unique: true |　
@@ -13,10 +14,9 @@
 | introduction | text | 
 
 # Association
-• has_many :products　
+• has_many :products
 
 • has_many :buyers
-
 
 # productsテーブル
 | culumn  | type   | options       |
@@ -43,9 +43,10 @@
 | building_name | string | 
 | phone_number | integer | unique: true |
 
-# Association
 
+# Association
 • belong_to :buyer
+
 
 # buyerテーブル
 
@@ -61,3 +62,4 @@
 •belong_to :product
 
 •has_one :address
+
