@@ -61,3 +61,4 @@
 •belong_to :product
 
 •has_one :address
+
