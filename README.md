@@ -2,7 +2,7 @@
 
 | culumn  | type   | options       |
 | ------  | ----   | ------------- |
-| name    | string | null: false, unique: true |　
+| name    | string | null: false |　
 | email   | string | null: false, unique: true |　
 | encrypted_password | string | null: false | 
 | first_name | string | null: false | 
@@ -21,11 +21,11 @@
 | culumn  | type   | options       |
 | ------  | ----   | ------------- |
 | title    | string | null: false   | 
-| products_status | integer | null: false |
-| delivery_fee | integer | null: false | 
-| delivery_area | integer | null: false |
-| delivery_day | integer | null: false 
-| category | integer | null: false |
+| products_status_id | integer | null: false |
+| delivery_fee_id | integer | null: false | 
+| delivery_area_id | integer | null: false |
+| delivery_day_id | integer | null: false 
+| category_id | integer | null: false |
 | price   | integer | null: false |  
 | user  | references | null: false,foreign_key: true| 
 
@@ -37,7 +37,7 @@
 # addressesテーブル
 | culumn  | type   | options       |
 | ------  | ----   | ------------- |
-| delivery_area| integer | null: false | 
+| delivery_area_id| integer | null: false | 
 | postal | string | null: false |  
 | city    | string | null: false | 
 | house_number | string | null: false |
