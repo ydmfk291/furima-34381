@@ -21,6 +21,7 @@
 | culumn  | type   | options       |
 | ------  | ----   | ------------- |
 | title    | string | null: false   | 
+| description | text | null: false | 
 | products_status_id | integer | null: false |
 | delivery_fee_id | integer | null: false | 
 | delivery_area_id | integer | null: false |
