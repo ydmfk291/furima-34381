@@ -120,7 +120,9 @@ GEM
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
+
     orm_adapter (0.5.0)
+
     parallel (1.20.1)
     parser (3.0.0.0)
       ast (~> 2.4.1)
@@ -164,6 +166,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     regexp_parser (2.1.1)
+
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -185,6 +188,9 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.10.2)
+
+    rexml (3.2.4)
+
     rubocop (1.11.0)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
@@ -235,6 +241,7 @@ GEM
     unicode-display_width (2.0.0)
     warden (1.2.9)
       rack (>= 2.0.9)
+
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -270,7 +277,9 @@ DEPENDENCIES
   mysql2 (>= 0.4.4)
   puma (~> 3.11)
   rails (~> 6.0.0)
+
   rspec-rails
+
   rubocop
   sass-rails (~> 5)
   selenium-webdriver
