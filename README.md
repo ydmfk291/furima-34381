@@ -17,7 +17,7 @@
 • has_many :buyers
 
 
-# productsテーブル
+# itemsテーブル
 | culumn  | type   | options       |
 | ------  | ----   | ------------- |
 | title    | string | null: false   | 
