@@ -28,6 +28,10 @@ RSpec.describe OrderShipping, type: :model do
         @order_shipping.valid?
         expect(@order_shipping.errors.full_messages).to include("Item can't be blank")
       end
+      it '紐づくuserがいないと保存できないこと' do
+        @order_shipping.user_id = nil
+        @order_shipping.valid?
+        expect(@order_shipping.errors.full_messages).to include("User can't be blank")
       it '郵便番号が空では保存できないこと' do
         @order_shipping.post_code = ''
         @order_shipping.valid?

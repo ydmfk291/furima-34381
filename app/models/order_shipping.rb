@@ -1,6 +1,5 @@
 class OrderShipping
   include ActiveModel::Model
-  attr_accessor :user_id, :item_id, :order_id, :post_code, :prefecture_id, :city, :address, :building_name, :tel_number, :token
 
   with_options presence: true do
     validates :token
@@ -10,7 +9,7 @@ class OrderShipping
     validates :prefecture_id, numericality: { other_than: 0, message: 'Select' }
     validates :city
     validates :address
-    validates :tel_number, format: { with: /\A[0-9]{11}\z/, message: 'Input only number' }
+    validates :tel_number, format: { with: /\A\d{10,11}\z/, message: 'Input only number' }
   end
 
   def save
