@@ -1,8 +1,9 @@
 class OrderShipping
   include ActiveModel::Model
-  attr_accessor :user_id, :item_id, :order_id, :post_code, :prefecture_id, :city, :address, :building_name, :tel_number
+  attr_accessor :user_id, :item_id, :order_id, :post_code, :prefecture_id, :city, :address, :building_name, :tel_number, :token
 
   with_options presence: true do
+    validates :token
     validates :user_id
     validates :item_id
     validates :post_code, format: { with: /\A[0-9]{3}-[0-9]{4}\z/, message: 'Input correctly' }
