@@ -7,14 +7,14 @@ class Item < ApplicationRecord
   belongs_to :prefecture
   belongs_to :delivery
   has_one_attached :image
-  has_one_ :order
+  has_one :order
 
   with_options presence: true do
     validates :image
     validates :name
     validates :text
     validates :price, numericality: { only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9999999, message: 'Out of setting range' }
-    with_options numericality: {other_than: 0, message: 'Select' } do
+    with_options numericality: { other_than: 0, message: 'Select' } do
       validates :category_id
       validates :condition_id
       validates :postage_id
