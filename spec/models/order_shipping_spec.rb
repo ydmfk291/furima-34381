@@ -66,7 +66,7 @@ RSpec.describe OrderShipping, type: :model do
       it '電話番号が11桁を超えると保存できないこと' do
         @order_shipping.tel_number = '090123456789'
         @order_shipping.valid?
-        expect(@order_shipping.errors.full_messages).to include("Tel number Input only number")
+        expect(@order_shipping.errors.full_messages).to include('Tel number Input only number')
       end
     end
   end
